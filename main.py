@@ -5,6 +5,8 @@ import pandas as pd
 import joblib
 import json
 
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # =========================================================
 # CONFIGURATION
@@ -60,6 +62,15 @@ app = FastAPI(
     description="ML API for detecting component burn-in anomalies",
     version="1.0"
 )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 
 # =========================================================
