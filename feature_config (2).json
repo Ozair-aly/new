@@ -1,0 +1,28 @@
+{
+  "raw_features": [
+    "initial_measurement",
+    "burn_in_24h",
+    "burn_in_96h",
+    "final_burn_in_reading"
+  ],
+  "engineered_features": [
+    "drift_24h",
+    "drift_96h",
+    "total_drift",
+    "drift_rate",
+    "acceleration"
+  ],
+  "all_features": [
+    "initial_measurement",
+    "burn_in_24h",
+    "burn_in_96h",
+    "final_burn_in_reading",
+    "drift_24h",
+    "drift_96h",
+    "total_drift",
+    "drift_rate",
+    "acceleration"
+  ],
+  "best_model_name": "Logistic Regression",
+  "model_needs_scaling": true
+}
